@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.header {
+  width: 100%;
+  height: 100%;
+  padding: 0 32px;
+  background-color: $Green-dark;
+  justify-content: space-between;
+
+  & > a {
+    height: 100%;
+    padding: 16px 0;
+
+    & > img {
+      width: 96px;
+    }
+  }
+
+  &-navbar {
+    & > a {
+      align-items: center;
+      height: 100%;
+      text-decoration: none;
+      color: $White;
+      font-size: 20px;
+      font-family: "burnaby-stencil";
+      transition: 0.3s;
+      padding: 0 12px;
+
+      &:hover {
+        color: $Black;
+        background-color: $Green-light;
+      }
+    }
+  }
+
+  &-wallet {
+    align-items: center;
+    padding: 0 0 0 16px;
+
+    & > button {
+      font-size: 20px;
+      font-family: "burnaby-stencil";
+      background-color: $Green-light;
+      border: 0;
+      border-radius: 8px;
+      padding: 8px 16px;
+      cursor: pointer;
+
+      &:hover {
+        color: $White-gray;
+      }
+    }
+  }
+}
+
+.current {
+  color: $Black !important;
+  background-color: $Green-light;
+}

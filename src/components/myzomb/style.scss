@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.myzomb {
+  position: relative;
+  width: 100%;
+
+  & > img {
+    z-index: 1;
+    width: 100%;
+  }
+
+  &-wrapper {
+    position: absolute;
+    padding: 64px 0 16px;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba($color: $Black-blue, $alpha: 0.9);
+    z-index: 2;
+    align-items: center;
+  }
+}

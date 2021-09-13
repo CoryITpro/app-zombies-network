@@ -1,0 +1,111 @@
+@import "../../styles/variables.scss";
+
+.fightmonster {
+  position: relative;
+  width: 100%;
+
+  & > img {
+    z-index: 1;
+    width: 100%;
+  }
+
+  &-wrapper {
+    position: absolute;
+    padding: 64px 0 16px;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba($color: $Black-blue, $alpha: 0.9);
+    z-index: 2;
+    align-items: center;
+  }
+
+  &-title {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 64px;
+
+    & > span {
+      color: $Green-light;
+      font-size: 28px;
+      font-family: "burnaby-stencil";
+
+      &:last-child {
+        cursor: pointer;
+        color: $Green-dark;
+        font-size: 14px;
+        font-family: "sofia-pro";
+
+        & > svg {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  &-monster {
+    position: relative;
+    max-width: 360px;
+    width: 30%;
+    min-width: 320px;
+
+    &s {
+      width: 100%;
+      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 64px 32px 32px;
+    }
+
+    & > img {
+      width: 100%;
+      z-index: 3;
+    }
+
+    & > div {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      z-index: 4;
+      gap: 8px;
+
+      & > img {
+        height: 260px;
+      }
+
+      & > span {
+        font-size: 32px;
+        font-family: "burnaby-stencil";
+      }
+
+      & > div {
+        width: 80%;
+        justify-content: space-between;
+        color: $Green-dark;
+        font-family: "sofia-pro";
+
+        & > span {
+          color: $Black;
+          width: 100px;
+        }
+      }
+
+      & > button {
+        margin-top: 16px;
+        font-size: 18px;
+        font-family: "burnaby-stencil";
+        padding: 8px 12px;
+        border-radius: 8px;
+        background-color: $Green-light;
+        border: 0;
+        cursor: pointer;
+
+        &:hover {
+          color: $White;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@import "../../styles/variables.scss";
+
+.starterpack {
+  position: relative;
+  width: 100%;
+
+  & > img {
+    z-index: 1;
+    width: 100%;
+  }
+
+  &-wrapper {
+    position: absolute;
+    padding: 64px 0 16px;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba($color: $Black-blue, $alpha: 0.9);
+    z-index: 2;
+    align-items: center;
+  }
+
+  &-title {
+    color: $Green-light;
+    font-size: 64px;
+    font-family: "burnaby-stencil";
+    text-align: center;
+  }
+
+  &-subtitle {
+    color: $White;
+    font-family: "sofia-pro";
+    font-size: 24px;
+    text-align: center;
+    margin-top: -8px;
+  }
+
+  &-buy {
+    position: relative;
+    margin: 64px 0 32px;
+
+    & > img {
+      width: 260px;
+      z-index: 2;
+    }
+
+    &-wrap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      padding: 32px 0 0;
+      align-items: center;
+      z-index: 3;
+
+      &-image {
+        height: 164px;
+        justify-content: center;
+
+        & > img {
+          height: 100%;
+        }
+      }
+
+      &-title {
+        font-size: 32px;
+        font-family: "burnaby-stencil";
+      }
+
+      &-price {
+        font-family: "sofia-pro";
+      }
+
+      & > button {
+        padding: 6px 12px;
+        font-family: "burnaby-stencil";
+        font-size: 18px;
+        background-color: $Green-light;
+        border: 0;
+        border-radius: 8px;
+        margin: 16px 0 0;
+        cursor: pointer;
+
+        &:hover {
+          color: $White;
+        }
+      }
+
+      & > a {
+        position: absolute;
+        bottom: 18px;
+        text-decoration: none;
+        color: $Black;
+        font-family: "sofia-pro";
+
+        & > svg {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
