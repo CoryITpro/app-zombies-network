@@ -11,11 +11,103 @@
 
   &-wrapper {
     position: absolute;
-    padding: 64px 0 16px;
+    padding: 64px 64px 16px;
     width: 100%;
     min-height: 100%;
     background-color: rgba($color: $Black-blue, $alpha: 0.9);
     z-index: 2;
     align-items: center;
+
+    &-title {
+      width: 100%;
+      padding: 0 0 16px 0;
+      align-items: center;
+      justify-content: space-between;
+
+      & > span {
+        color: $Green-light;
+        font-size: 28px;
+        font-family: "burnaby-stencil";
+      }
+    }
+
+    &-input {
+      width: 40%;
+      max-width: 360px;
+      position: relative;
+      align-items: center;
+
+      & > input {
+        width: 100%;
+        border: 2px solid $Black-gray;
+        padding: 12px 16px;
+        color: $White;
+        font-family: "sofia-pro";
+        font-size: 16px;
+        background-color: $Black-blue;
+        border-radius: 8px;
+        outline: 0;
+        transition: 0.3s;
+
+        &:focus {
+          border-color: $Green-light;
+        }
+      }
+
+      & > svg {
+        position: absolute;
+        color: $Green-light;
+        font-size: 20px;
+        right: 16px;
+        cursor: pointer;
+      }
+    }
+
+    &-tabs {
+      width: 100%;
+      border-bottom: 1px solid $Green-light;
+
+      & > button {
+        padding: 16px;
+        border: 0;
+        color: $Green-light;
+        font-family: "sofia-pro";
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+          color: $Black;
+          background-color: $Green-light;
+        }
+      }
+
+      & + div {
+        padding: 24px 0;
+      }
+    }
+
+    &-marketplace {
+      width: 100%;
+
+      &-types {
+        width: 100%;
+        gap: 16px;
+        font-family: "sofia-pro";
+
+        & > button {
+          color: $Green-dark;
+          padding: 12px;
+          background-color: $Black-blue;
+          border: 2px solid $Black-gray;
+          border-radius: 8px;
+          cursor: pointer;
+
+          &:hover {
+            color: $Black;
+            background-color: $Green-light;
+          }
+        }
+      }
+    }
   }
 }
